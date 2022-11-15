@@ -1,0 +1,34 @@
+.checkbox-accept {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  padding-left: 12px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.checkbox-accept__checkbox {
+  @extend %is-hidden;
+  display: none;
+
+  &:checked + .checkbox-accept__icon {
+    border: none;
+    background-color: $color-brand;
+    background-size: contain;
+    background-origin: border-box;
+    fill: $color-white;
+  }
+}
+
+.checkbox-accept__icon {
+  width: 16px;
+  height: 15px;
+  @include centeredFlex();
+  border-radius: 2px;
+  border: 2px solid $main-color;
+  fill: transparent;
+}
+
+.checkbox-accept__link {
+  color: $color-brand;
+}

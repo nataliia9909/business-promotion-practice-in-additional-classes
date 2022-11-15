@@ -1,0 +1,30 @@
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__item {
+  width: calc(100% - (30px * 5) / 6);
+  height: 92px;
+}
+
+.clients__link {
+  width: 100%;
+  height: 100%;
+  @include centeredFlex();
+  border: 1px solid $color-icon;
+  border-radius: 4px;
+  color: $color-icon;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $color-brand;
+    color: $color-brand;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,29 @@
+.footer {
+  background-color: $color-background-secondary;
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.footer__logo {
+  color: $color-white;
+}
+
+.footer__social-title {
+  color: $color-white;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__social-link {
+  background-color: $color-background-icon-footer;
+  color: $color-white;
+}

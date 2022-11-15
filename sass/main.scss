@@ -1,0 +1,54 @@
+// utils
+@import "./utils/_variables.scss";
+@import "./utils/_mixins.scss";
+@import "./utils/_placeholders.scss";
+
+// base styles
+@import "./base/_modern_normalize.scss";
+@import "./base/_reset.scss";
+@import "./base/_base.scss";
+
+// components
+
+// common
+@import "./components/common/_logo.scss";
+@import "./components/common/primary-button";
+@import "./components/common/social-list";
+
+// header
+@import "./components/header/_header.scss";
+@import "./components/header/_nav.scss";
+@import "./components/header/_contacts.scss";
+
+// hero section
+@import "./components/hero-section/hero";
+
+// features section
+@import "./components/features-section/features";
+
+// activity section
+@import "./components/activity-section/activity";
+
+// team section
+@import "./components/team-section/team";
+
+// clients section
+@import "./components/clients-section/clients";
+
+// footer
+@import "./components/footer/footer";
+@import "./components/footer/address";
+@import "./components/footer/follow-form";
+
+// modal window
+@import "./components/modal-window/backdrop";
+@import "./components/modal-window/modal";
+@import "./components/modal-window/close-button";
+@import "./components/modal-window/form-data";
+@import "./components/modal-window/checkbox-accept";
+@import "./components/modal-window/is-hidden";
+
+// portfolio
+@import "./components/portfolio/portfolio";
+@import "./components/portfolio/card-set";
+@import "./components/portfolio/product";
