@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-Homework 5 (Module 1 HTML+CSS)
+# goit-markup-hw-07
+Homework 7 (Module 1 HTML+CSS)
