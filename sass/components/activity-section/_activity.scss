@@ -1,5 +1,10 @@
 .activity {
   padding-top: 47px;
+  display: none;
+
+  @include mq(desctop) {
+    display: block;
+  }
 }
 
 .activity__container {

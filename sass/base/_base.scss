@@ -7,21 +7,41 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @include mq(desctop) {
+    padding: 94px 0;
+  }
 }
 
 .section__title {
   color: $main-color;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include mq(desctop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @include mq(mobile) {
+    width: 480px;
+  }
+
+  @include mq(tablet) {
+    width: 768px;
+  }
+
+  @include mq(desctop) {
+    width: 1200px;
+  }
 }
