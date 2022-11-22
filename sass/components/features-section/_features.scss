@@ -1,5 +1,9 @@
 .features {
-  padding-bottom: 47px;
+  padding-bottom: 60px;
+
+  @include mq(desctop) {
+    padding-bottom: 47px;
+  }
 }
 
 .features__title {
@@ -7,17 +11,23 @@
 }
 
 .feateres__list {
-  display: flex;
-  gap: 30px;
-  padding: 0;
+  @include card-set;
 }
 
 .feateres__item {
-  width: 270px;
+  @include card-set-item;
+
+  @include mq(tablet) {
+    @include card-set-item(2);
+  }
+
+  @include mq(desctop) {
+    @include card-set-item(4);
+  }
 }
 
 .feateres__icon {
-  width: 270px;
+  width: 100%;
   height: 120px;
   @include centeredFlex();
   background-color: $color-background-icon;
@@ -33,6 +43,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @include mq(mobile-only) {
+    text-align: center;
+  }
 }
 
 .feateres__text {
