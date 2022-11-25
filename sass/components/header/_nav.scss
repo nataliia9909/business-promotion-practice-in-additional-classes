@@ -1,11 +1,15 @@
 .nav {
-  @extend %space-betweenFlex;
+  @include space-betweenFlex;
   gap: 93px;
 }
 
 .nav__menu {
-  @extend %space-betweenFlex;
-  gap: 50px;
+  display: none;
+
+  @include mq(tablet) {
+    @include space-betweenFlex;
+    gap: 50px;
+  }
 }
 
 .nav__link {

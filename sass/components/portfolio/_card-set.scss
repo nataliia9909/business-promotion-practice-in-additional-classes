@@ -1,9 +1,15 @@
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: $indent;
+  @include card-set;
 }
 
 .card-set__item {
-  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+  @include card-set-item(1);
+
+  @include mq(tablet) {
+    @include card-set-item(2);
+  }
+
+  @include mq(desctop) {
+    @include card-set-item(3);
+  }
 }

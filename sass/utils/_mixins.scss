@@ -17,6 +17,12 @@
   justify-content: center;
 }
 
+@mixin space-betweenFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 // media query mixin
 @mixin mq($type) {
   $mobile: 480px;
