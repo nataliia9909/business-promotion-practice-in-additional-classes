@@ -1,12 +1,33 @@
 .footer {
   background-color: $color-background-secondary;
   padding: 60px 0;
+  text-align: center;
 }
 
 .footer__container {
-  display: flex;
-  gap: 70px;
-  align-items: baseline;
+  @include mq(mobile) {
+    display: inline-block;
+  }
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+  }
+
+  @include mq(desctop) {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+  }
+}
+
+.footer__contacts,
+.footer__social {
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__logo {
@@ -27,3 +48,35 @@
   background-color: $color-background-icon-footer;
   color: $color-white;
 }
+
+// стилі без світла
+// .footer__container {
+//   @include mq(tablet) {
+//     display: flex;
+//     align-items: baseline;
+//   }
+//   @include mq(desctop) {
+//     gap: 70px;
+//   }
+// }
+
+// .footer {
+//   text-align: center;
+// }
+
+// .follow-form__input {
+//   max-width: 450px;
+//   width: 100%;
+//   margin-bottom: 20px;
+// }
+
+// .follow-form__button {
+//   display: inline-block;
+// }
+
+// таблетна версія
+// .footer__container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+// }

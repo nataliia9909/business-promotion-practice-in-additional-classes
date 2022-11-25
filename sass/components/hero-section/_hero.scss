@@ -1,22 +1,27 @@
 .hero {
   background-color: $color-background-secondary;
-  max-width: 480px;
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  background-image: linear-gradient($gradient), url(../images/hero-bgc_sm.jpg);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient($gradient),
-      url(../images/hero-bgc_sm@2x.jpg);
-  }
+  padding: 118px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @include mq(mobile-only) {
+    background-image: linear-gradient($gradient), url(../images/hero-bgc_sm.jpg);
+    max-width: 480px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($gradient),
+        url(../images/hero-bgc_sm@2x.jpg);
+    }
+  }
+
+  @include mq(tablet) {
     background-image: linear-gradient($gradient), url(../images/hero-bgc_md.jpg);
+    max-width: 768px;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -24,18 +29,18 @@
         url(../images/hero-bgc_md@2x.jpg);
     }
   }
-  @media screen and (min-width: 769px) {
+
+  @include mq(desctop) {
     background-image: linear-gradient($gradient), url(../images/hero-bgc_lg.jpg);
+    padding: 200px 0;
+    max-width: 1600px;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient($gradient),
         url(../images/hero-bgc_lg@2x.jpg);
     }
-    margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
   }
 }
 
@@ -54,7 +59,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  width: 360ps;
+  width: 360px;
 
   @include mq(desctop) {
     font-size: 44px;

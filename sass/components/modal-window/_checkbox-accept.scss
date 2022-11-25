@@ -2,9 +2,12 @@
   display: flex;
   gap: 9px;
   align-items: center;
-  padding-left: 12px;
   margin-top: 20px;
   margin-bottom: 30px;
+
+  @include mq(desctop) {
+    padding-left: 12px;
+  }
 }
 
 .checkbox-accept__checkbox {
@@ -27,6 +30,13 @@
   border-radius: 2px;
   border: 2px solid $main-color;
   fill: transparent;
+}
+
+.checkbox-accept__label {
+  @include mq(not-desctop) {
+    font-size: 12px;
+    line-height: 1, 17;
+  }
 }
 
 .checkbox-accept__link {

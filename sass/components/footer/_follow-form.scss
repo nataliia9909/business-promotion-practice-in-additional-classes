@@ -1,6 +1,12 @@
 .follow-form {
-  display: block;
-  margin-left: auto;
+  @include mq(tablet-only) {
+    width: 100%;
+  }
+
+  @include mq(desctop) {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 .follow-form__title {
@@ -11,27 +17,42 @@
   text-transform: uppercase;
   color: $color-white;
   margin-bottom: 20px;
+
+  @include mq(desctop) {
+    text-align: left;
+  }
 }
 
 .follow-form__field {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: block;
+
+  @include mq(desctop) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 }
 
 .follow-form__input {
-  width: 358px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
+  @include mq(desctop) {
+    width: 358px;
+    margin: 0;
+  }
 }
 
 .follow-form__button {
-  padding: 10px 28px;
   display: flex;
+  padding: 10px 28px;
   align-items: center;
   gap: 10px;
+  margin: 0 auto;
 }
 
 .follow-form__button-icon {
