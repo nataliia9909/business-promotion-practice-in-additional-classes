@@ -1,25 +1,25 @@
 // utils
-@import "./utils/_variables.scss";
-@import "./utils/_mixins.scss";
-@import "./utils/_placeholders.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 
 // base styles
-@import "./base/_modern_normalize.scss";
-@import "./base/_reset.scss";
-@import "./base/_base.scss";
+@import "./base/modern_normalize";
+@import "./base/reset";
+@import "./base/base";
 
 // components
 
 // common
-@import "./components/common/_logo.scss";
+@import "./components/common/logo";
 @import "./components/common/primary-button";
 @import "./components/common/social-list";
 
 // header
-@import "./components/header/_header.scss";
-@import "./components/header/_nav.scss";
-@import "./components/header/_contacts.scss";
-@import "./components/header/mobile-menu";
+@import "./components/header/header";
+@import "./components/header/nav";
+@import "./components/header/contacts";
+@import "./components/header/menu";
 
 // hero section
 @import "./components/hero-section/hero";

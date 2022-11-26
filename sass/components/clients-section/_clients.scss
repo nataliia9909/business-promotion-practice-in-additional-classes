@@ -3,6 +3,8 @@
 }
 
 .clients__item {
+  height: 92px;
+
   @include card-set-item(2);
 
   @include mq(tablet) {
