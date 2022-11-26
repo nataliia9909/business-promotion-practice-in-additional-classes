@@ -1634,6 +1634,10 @@ body {
   height: 294px;
 }
 
+.product__photo {
+  height: 100%;
+}
+
 .product__overlay {
   position: absolute;
   top: 0;
