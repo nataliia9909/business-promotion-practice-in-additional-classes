@@ -7,15 +7,22 @@
 }
 
 .portfolio__button-list {
-  @include mq(mobile-only) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px 8px;
-  }
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px 8px;
+  margin-bottom: 40px;
+
+  @include mq(tablet) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  @include mq(desctop) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__button {

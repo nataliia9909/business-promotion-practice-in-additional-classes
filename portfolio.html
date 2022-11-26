@@ -35,31 +35,50 @@
           </ul>
         </nav>
         <ul class="contacts">
-          <li>
+          <li class="contacts__item">
             <a
               class="contacts__link"
               href="mailto:info@devstudio.com"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              ><svg class="contacts__icon" width="16" height="12">
+              ><svg class="contacts__icon-envelope">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="contacts__item">
             <a
               class="contacts__link"
               href="tel:+380961111111"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              ><svg class="contacts__icon" width="10" height="16">
+              ><svg class="contacts__icon-smartphone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <button
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -86,7 +105,15 @@
           <ul class="card-set">
             <li class="product card-set__item">
               <div class="product__image">
-                <img src="./images/img1.png" alt="ноутбук" width="370" />
+                <img
+                  srcset="
+                    ./images/portfolio-img1.jpg    1x,
+                    ./images/portfolio-img1@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img1.jpg"
+                  alt="ноутбук"
+                  loading="lazy"
+                />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -101,9 +128,13 @@
             <li class="product card-set__item">
               <div class="product__image">
                 <img
-                  src="./images/img2.png"
+                  srcset="
+                    ./images/portfolio-img2.jpg    1x,
+                    ./images/portfolio-img2@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img2.jpg"
                   alt="баскетболісти в прижку"
-                  width="370"
+                  loading="lazy"
                 />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -119,9 +150,13 @@
             <li class="product card-set__item">
               <div class="product__image">
                 <img
-                  src="./images/img3.png"
+                  srcset="
+                    ./images/portfolio-img3.jpg    1x,
+                    ./images/portfolio-img3@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img3.jpg"
                   alt="логотип ресторану"
-                  width="370"
+                  loading="lazy"
                 />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -136,7 +171,15 @@
             </li>
             <li class="product card-set__item">
               <div class="product__image">
-                <img src="./images/img4.png" alt="наушники" width="370" />
+                <img
+                  srcset="
+                    ./images/portfolio-img4.jpg    1x,
+                    ./images/portfolio-img4@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img4.jpg"
+                  alt="наушники"
+                  loading="lazy"
+                />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -150,7 +193,15 @@
             </li>
             <li class="product card-set__item">
               <div class="product__image">
-                <img src="./images/img5.png" alt="коробки" width="370" />
+                <img
+                  srcset="
+                    ./images/portfolio-img5.jpg    1x,
+                    ./images/portfolio-img5@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img5.jpg"
+                  alt="коробки"
+                  loading="lazy"
+                />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -164,7 +215,15 @@
             </li>
             <li class="product card-set__item">
               <div class="product__image">
-                <img src="./images/img6.png" alt="монітор" width="370" />
+                <img
+                  srcset="
+                    ./images/portfolio-img6.jpg    1x,
+                    ./images/portfolio-img6@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img6.jpg"
+                  alt="монітор"
+                  loading="lazy"
+                />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -178,7 +237,15 @@
             </li>
             <li class="product card-set__item">
               <div class="product__image">
-                <img src="./images/img7.png" alt="книга" width="370" />
+                <img
+                  srcset="
+                    ./images/portfolio-img7.jpg    1x,
+                    ./images/portfolio-img7@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img7.jpg"
+                  alt="книга"
+                  loading="lazy"
+                />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -192,7 +259,15 @@
             </li>
             <li class="product card-set__item">
               <div class="product__image">
-                <img src="./images/img8.png" alt="реклама" width="370" />
+                <img
+                  srcset="
+                    ./images/portfolio-img8.jpg    1x,
+                    ./images/portfolio-img8@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img8.jpg"
+                  alt="реклама"
+                  loading="lazy"
+                />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -206,7 +281,15 @@
             </li>
             <li class="product card-set__item">
               <div class="product__image">
-                <img src="./images/img9.png" alt="ноутбук" width="370" />
+                <img
+                  srcset="
+                    ./images/portfolio-img9.jpg    1x,
+                    ./images/portfolio-img9@2x.jpg 2x
+                  "
+                  src="./images/portfolio-img9.jpg"
+                  alt="ноутбук"
+                  loading="lazy"
+                />
                 <div class="product__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -312,5 +395,64 @@
         </form>
       </div>
     </footer>
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="menu__mobile-menu">
+        <li class="menu__menu-item">
+          <a href="./index.html" class="menu__link">Студія</a>
+        </li>
+        <li class="menu__menu-item menu__menu-item--current">
+          <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+        </li>
+        <li class="menu__menu-item">
+          <a href="" class="menu__link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu__mobile-contacts">
+        <li class="menu__contacts-tel">
+          <a href="#" class="menu__link">+38 096 111 11 11</a>
+        </li>
+        <li class="menu__contacts-mail">
+          <a href="#" class="menu__link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu__mobile-socials">
+        <li class="menu__socials-item">
+          <a href="#" class="menu__link">Instagram</a>
+        </li>
+        <li class="menu__socials-item">
+          <a href="#" class="menu__link">Twitter</a>
+        </li>
+        <li class="menu__socials-item">
+          <a href="#" class="menu__link">Facebook</a>
+        </li>
+        <li class="menu__socials-item">
+          <a href="#" class="menu__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

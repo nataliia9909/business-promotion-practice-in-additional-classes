@@ -12,15 +12,19 @@
     gap: 50px;
   }
 }
+
+.contacts__item:not(:last-child) {
+  @include mq(tablet-only) {
+    margin-bottom: 10px;
+  }
+}
+
 .contacts__link {
   color: $color-primary;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  // padding: 32px 0;
-  // @include space-betweenFlex;
-  // gap: 10px;
   display: flex;
   gap: 8px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -37,10 +41,24 @@
   }
 }
 
-.contacts__icon {
+.contacts__icon-envelope {
+  width: 14px;
+  height: 10px;
   fill: currentColor;
 
-  @include mq(tablet-only) {
-    height: 100%;
+  @include mq(desctop) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__icon-smartphone {
+  width: 10px;
+  height: 14px;
+  fill: currentColor;
+
+  @include mq(desctop) {
+    width: 10px;
+    height: 16px;
   }
 }
