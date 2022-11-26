@@ -1631,6 +1631,7 @@ body {
 .product__image {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 
 .product__overlay {
